@@ -87,12 +87,21 @@
           <form class="mb-3 d-flex justify-content-center" onsubmit="return false;" role="search">
             <div class="col-3 m-1 ms-5">
               <select id="search-area" class="form-select me-2 shadow">
-                <option value="0" selected>검색 할 지역 선택</option>
+                <option value="0" selected>검색 할 시도</option>
               </select>
             </div>
             <div class="col-3 m-1">
-              <select id="search-content-id" class="form-select me-2 shadow">
-                <option value="0" selected>관광지 유형</option>
+              <select id="search-sigun" class="form-select me-2 shadow">
+                <option value="0" selected>검색 할 구군</option>
+              </select>
+            </div>
+            <div class="col-3 mt-1 ms-1">
+              <select
+                id="search-content-id"
+                class="form-select me-2 shadow bg-gradient"
+                style="background-color: #fefaea"
+              >
+                <option value="0" selected>컨텐츠 선택</option>
                 <option value="12">관광지</option>
                 <option value="14">문화시설</option>
                 <option value="15">축제공연행사</option>
@@ -102,15 +111,13 @@
                 <option value="38">쇼핑</option>
                 <option value="39">음식점</option>
               </select>
-            </div>
-            <div class="col-4 mt-1 ms-1">
-              <input
+              <!-- <input
                 id="search-keyword"
                 class="form-control me-2 shadow"
                 type="search"
                 placeholder="검색어"
                 aria-label="검색어"
-              />
+              /> -->
             </div>
             <div class="col-2 mt-1">
               <button id="btn-search" class="btn btn-outline-success shadow" type="button">

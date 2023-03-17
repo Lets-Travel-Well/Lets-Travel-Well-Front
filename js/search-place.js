@@ -153,8 +153,6 @@ function moveCenter(lat, lng) {
 }
       
 window.onload = function () {
-    var location = document.querySelector("#search-place").offsetTop;
-    window.scrollTo({ top: location, behavior: 'smooth' });
     
     let searchUrl = `https://apis.data.go.kr/B551011/KorService1/areaBasedList1?serviceKey=${serviceKey}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&_type=json&listYN=Y&arrange=Q`;
     fetch(searchUrl)
